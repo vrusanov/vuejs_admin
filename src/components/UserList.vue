@@ -6,18 +6,22 @@
         <table v-else class="table table-hover">
             <thead>
             <tr>
-                <th>id!</th>
-                <th>name</th>
-                <th>username</th>
-                <th>email</th>
-                <th>address</th>
+                <th>id</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Company</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="item in userlist" v-bind:key="item.id">
                 <td>{{ item.id }}</td>
-                <td>{{ item.name }}</td>
-                <td>{{ item.username }}</td>
+                <td>{{ item.firstName }}</td>
+                <td>{{ item.lastName}}</td>
+                <td>{{ item.company }}</td>
+                <td>{{ item.phone }}</td>
                 <td>{{ item.email }}</td>
                 <td>{{ item.address }}</td>
             </tr>
@@ -34,6 +38,7 @@
 </template>
 
 <script>
+
     export default {
         name: "UserList",
         props: {

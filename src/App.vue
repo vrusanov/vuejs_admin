@@ -17,7 +17,7 @@
                        Users
                       </router-link>                  </li>
                   <li class="nav-item">
-                      <router-link class="nav-link" to="/about">
+                      <router-link class="nav-link" to="/edit">
                           About
                       </router-link>                  </li>
               </ul>
