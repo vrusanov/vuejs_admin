@@ -10,16 +10,19 @@
                   <li class="nav-item active">
                       <router-link class="nav-link" to="/">
                           Home
-                      </router-link>                  </li>
+                      </router-link>
+                  </li>
                   <li class="nav-item">
 
                       <router-link class="nav-link" to="/users">
                        Users
-                      </router-link>                  </li>
+                      </router-link>
+                  </li>
                   <li class="nav-item">
                       <router-link class="nav-link" to="/edit">
-                          About
-                      </router-link>                  </li>
+                          Edit
+                      </router-link>
+                  </li>
               </ul>
           </div>
       </nav>
@@ -36,7 +39,6 @@
 </template>
 
 <script>
-
 
 export default {
   name: 'app',

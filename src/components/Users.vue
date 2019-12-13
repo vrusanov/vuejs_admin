@@ -1,11 +1,6 @@
 <template>
     <div class="container">
         <h2>User List</h2>
-
-        <div v-if="!users.length" class="alert alert-warning">
-            Загрузка...
-        </div>
-
         <user-list  v-bind:userlist="users"></user-list>
     </div>
 </template>
@@ -17,7 +12,7 @@
     export default {
         name: "Users",
         components: {
-            'user-list': USERLIST
+            'user-list': USERLIST,
         },
         data: function () {
             return {
